@@ -210,9 +210,12 @@ button {
   width: 49%;
   padding: 5%;
 }
-section .address {
+footer {
   display: block;
   margin: 0px 800px 0 0;
   width: 49%;
   padding: 5%;
+}
+footer p {
+  text-align: center;
 }
