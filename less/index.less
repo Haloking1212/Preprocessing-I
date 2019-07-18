@@ -56,4 +56,107 @@ table {
 html, body {
     height: 100%;
 }
+/*code starts here */
+/*variable code*/
 
+@textColor: gray;
+
+/*mixin code*/
+.mix-in2 {
+	display: block;
+	margin: 0px 300px 0 0;
+	width: 100%;
+	padding: 5%;
+}
+
+.mix-in {
+	display: block;
+	margin: 0px 800px 0 0;
+	width: 49%;
+	padding: 5%;
+}
+/*header starts code here*/
+
+html {
+	font-family: 'Shadows Into Light', cursive;
+}
+div.nav-container {
+	display: flex;
+	justify-content: flex-end;
+	margin: auto;
+	width: 96%;
+	padding-top: 2%;
+	padding-bottom: 2%; 
+	a.home, a.about, a.portfolio, a.contacts {
+		text-transform: uppercase;
+		margin: 40px;
+	}
+	a {
+		text-decoration: none;
+		color: black;
+	  }
+	    /*media query code*/
+  @media screen and (max-width:500px) {
+	nav {
+		display: flex;
+		justify-content: flex-start;
+		width: 100%;
+	}
+	}
+}
+  /*top-container starts here*/
+
+  div.top-container {
+	display: block;
+	margin:auto;
+	background-color: rgb(213, 218, 221);
+	width: 90%;
+	height: auto;
+	padding: 5%;
+	img {
+		width: 20%;
+		height: 200px;
+	  }
+	  @media screen and (max-width:500px) {
+		  img {
+			  width: 100%;
+		  }
+	  }
+	
+	div.top-container h1 {
+	  font-weight: bold;
+	  font-size: 3.5rem;
+	}
+	h2 {
+		font-size: 2rem;
+	  }
+	  button {
+		padding: 1%;
+		background-color: @textColor;
+		color: white;
+		margin-top: 2%;
+	}
+  }
+  .mid-section {
+	  .mix-in();
+	  @media screen and (max-width:500px) {
+		.mix-in2();
+	  }
+  }
+
+  .bottom-section {
+	.mix-in();
+	@media screen and (max-width:500px) {
+		.mix-in2();
+	  }
+  }
+
+  footer {
+	.mix-in();
+	@media screen and (max-width:500px) {
+		.mix-in2();
+	  }
+	p {
+		text-align: center;
+	}
+  }
