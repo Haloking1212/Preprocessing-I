@@ -176,6 +176,8 @@ div.nav-container a {
 @media screen and (max-width: 500px) {
   div.nav-container nav {
     display: flex;
+    width: 100%;
+    margin: auto;
   }
 }
 /*top-container starts here*/
