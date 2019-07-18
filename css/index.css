@@ -177,7 +177,6 @@ div.nav-container a {
   div.nav-container nav {
     display: flex;
     width: 100%;
-    margin: auto;
   }
 }
 /*top-container starts here*/
