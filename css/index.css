@@ -136,6 +136,9 @@ body {
 }
 /*code starts here */
 /*header starts code here*/
+html {
+  font-family: 'Shadows Into Light', cursive;
+}
 div.nav-container {
   display: flex;
   justify-content: flex-end;
@@ -144,17 +147,25 @@ div.nav-container {
   padding-top: 2%;
   padding-bottom: 2%;
 }
-a.home,
-a.about,
-a.portfolio,
-a.contacts {
+div.nav-container a.home,
+div.nav-container a.about,
+div.nav-container a.portfolio,
+div.nav-container a.contacts {
   text-transform: uppercase;
   margin: 40px;
 }
-a {
+div.nav-container a {
   text-decoration: none;
   color: black;
 }
+/*a.home, a.about, a.portfolio, a.contacts {
+	  text-transform: uppercase;
+	  margin: 40px;
+  }*/
+/* a {
+	text-decoration: none;
+	color: black;
+  }*/
 /*nav {
 	display: flex;
 	margin: 15px 49px ;
@@ -162,10 +173,6 @@ a {
 	justify-content: space-around;
   }*/
 /*top-container starts here*/
-img {
-  width: 20%;
-  height: 200px;
-}
 div.top-container {
   display: block;
   margin: auto;
@@ -173,6 +180,10 @@ div.top-container {
   width: 90%;
   height: auto;
   padding: 5%;
+}
+div.top-container img {
+  width: 20%;
+  height: 200px;
 }
 div.top-container h1 {
   font-weight: bold;
@@ -187,7 +198,19 @@ button {
   color: white;
   margin-top: 2%;
 }
-div.intro {
+.mid-section {
+  display: block;
+  margin: 0px 800px 0 0;
+  width: 49%;
+  padding: 5%;
+}
+.bottom-section {
+  display: block;
+  margin: 0px 800px 0 0;
+  width: 49%;
+  padding: 5%;
+}
+section .address {
   display: block;
   margin: 0px 800px 0 0;
   width: 49%;
